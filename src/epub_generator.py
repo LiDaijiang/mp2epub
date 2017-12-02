@@ -2,15 +2,27 @@
 import os.path
 import zipfile
 from datetime import datetime
+from random import Random
+
+
+def random_str(length=8):
+    str = ''
+    chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
+    l = len(chars) - 1
+    random = Random()
+    for i in range(length):
+        str+=chars[random.randint(0, l)]
+    return str
 
 title = '测试'
 author = 'daijiang'
 publisher = '母鸡啊'
 date = datetime.now().strftime('%Y-%d-%m')
 desc = '弄着玩的'
+uid = random_str(36)
 
 # 0.创建目标epub文件
-epub = zipfile.ZipFile('../output/my_ebook.epub', 'w')
+epub = zipfile.ZipFile('../output/如何把公众号文章制作成电子书.epub', 'w')
 
 # 1.mimetype文件
 # 位置:根目录
@@ -75,7 +87,7 @@ epub.writestr('OEBPS/toc.ncx', """<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 <ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
 <head>
-<meta name="dtb:uid" content=""/>
+<meta name="dtb:uid" content="{uid}"/>
 <meta name="dtb:depth" content="1"/>
 <meta name="dtb:totalPageCount" content="0"/>
 <meta name="dtb:maxPageNumber" content="0"/>
@@ -85,14 +97,14 @@ epub.writestr('OEBPS/toc.ncx', """<?xml version="1.0" encoding="utf-8"?>
 </docTitle>
 <navMap>
 {navPoint}
-</navMap></ncx>""".format(title=title, navPoint=navPoint))
+</navMap></ncx>""".format(uid=uid, title=title, navPoint=navPoint))
 
 # 6.索引文件
 # 位置:OEBPS/Content.opf
 index_tpl = '''<?xml version="1.0" encoding="UTF-8" ?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
 <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<dc:identifier id="uuid_id" opf:scheme="uuid"></dc:identifier>
+<dc:identifier id="uuid_id" opf:scheme="uuid">{uid}</dc:identifier>
 <dc:title>{title}</dc:title>
 <dc:creator opf:role="aut">{author}</dc:creator>
 <dc:contributor opf:role="bkp">dj</dc:contributor>
@@ -113,8 +125,9 @@ index_tpl = '''<?xml version="1.0" encoding="UTF-8" ?>
 </spine>
 </package>'''
 
-epub.writestr('OEBPS/Content.opf',
-              index_tpl.format(title=title,
+epub.writestr('OEBPS/content.opf',
+              index_tpl.format(uid=uid,
+                               title=title,
                                author=author,
                                publisher=publisher,
                                date=date,
