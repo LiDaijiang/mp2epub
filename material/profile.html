@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--headTrap<body></body><head></head><html></html>--><html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script nonce="" type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+
+        <link rel="dns-prefetch" href="//res.wx.qq.com">
+<link rel="dns-prefetch" href="//mmbiz.qpic.cn">
+<link rel="shortcut icon" type="image/x-icon" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script nonce="" type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd';
+        var tmp = url.split('?'),
+            query = (tmp[1] || "").split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || "777" || '';
+        window.key = params['key'] || "777" || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+        window.appmsg_token = "933_JabCc0%2BeXx%2F68m8hA7CmN04fp59Ct2cKDeGQpQ~~";
+    })();
+
+    function wx_loaderror() {
+        if (location.pathname === '/bizmall/reward') {
+            new Image().src = '/mp/jsreport?key=96&content=reward_res_load_err&r=' + Math.random();
+        }
+    }
+
+</script>
+
+        <title></title>
+
+<link onerror="wx_loaderror(this)" rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/0.2.0/weui.css">
+<link onerror="wx_loaderror(this)" rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.1/weui.css">
+
+<link rel="stylesheet" type="text/css" href="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/profile/index3944ad.css" />
+
+    </head>
+    <body id="" class="zh_CN ">
+
+<script type="text/javascript">
+    if (window.location != window.parent.location) {
+        window.location.href = 'http://mp.weixin.qq.com/mp/readtemplate?t=wxm-cannot-open#wechat_redirect';
+    }
+    var pass_ticket = "i9hOYLZZef7lSHlRGS5XIh5VAGYkbdC+ShjvuuTd4bsiNGKCnZFdfBrhsPczOQC7" || "";
+    var uin = "777" || "";
+    var key = "777" || "";
+</script>
+
+<div class="weui-search-bar" title="搜索" role="search" aria-label="搜索公众号文章" id="js_search" style="display:none;">
+    <div class="weui-search-bar__form" style="-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;">
+        <label class="weui-search-bar__label">
+            <i class="weui-icon-search"></i>
+            <span>搜索</span>
+        </label>
+    </div>
+</div>
+<div class="profile_info appmsg">
+    <span class="radius_avatar profile_avatar">
+        <img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM6A54TibfJ8VyrHufnz1iap74HIdCLjn0uJdYoaicO3orMCA/0" id="icon">
+    </span>
+    <strong class="profile_nickname" id="nickname">
+        小米超神    </strong>
+        <p class="profile_desc">
+                【小米超神】是一款以东方英雄和实时策略竞技为特点的MOBA手游。产品将原本仅存于PC的华丽微操和出色意识在移动端完美展现，竞技魅力十足！            </p>
+    <div class="profile_opr" style="display: none;" id="js_button">
+        <a href="javascript:void(0);" id="js_btn_add_contact" class="weui_btn weui_btn_plain_primary" style="display:none;">关注</a>
+        <a href="javascript:void(0);" id="js_btn_view_profile" class="weui_btn weui_btn_plain_primary" >发消息</a>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var is_ok = 1;
+    var scene = "124" || "";
+    var a8scene = "3";
+
+    (function() {
+        var is_android = /(Android)/i.test(navigator.userAgent);
+
+        var __JSAPI__ = {
+            ready: function(onBridgeReady) {
+                var _onBridgeReady = function() {
+                    if (!!onBridgeReady) {
+                        onBridgeReady();
+                    }
+                };
+
+                if (typeof top.window.WeixinJSBridge == "undefined" || !top.window.WeixinJSBridge.invoke) {
+
+                    if (top.window.document.addEventListener) {
+                        top.window.document.addEventListener('WeixinJSBridgeReady', _onBridgeReady, false);
+                    } else if (top.window.document.attachEvent) {
+                        top.window.document.attachEvent('WeixinJSBridgeReady', _onBridgeReady);
+                        top.window.document.attachEvent('onWeixinJSBridgeReady', _onBridgeReady);
+                    }
+                } else {
+
+                    _onBridgeReady();
+                }
+            },
+            invoke: function(methodName, args, callback) {
+                this.ready(function() {
+
+                    if (typeof top.window.WeixinJSBridge != "object" ) {
+                        alert("请在微信中打开此链接！");
+                        return false;
+                    }
+                    top.window.WeixinJSBridge.invoke(methodName, args, function(ret){
+                        if (!!callback) {
+                            callback.apply(window, arguments);
+                            var err_msg = ret && ret.err_msg ? ", err_msg-> " + ret.err_msg : "";
+                            console.info("[jsapi] invoke->" + methodName + err_msg);
+                        }
+                    });
+                });
+            }
+        }
+        var __Ajax__ = function(obj) {
+
+            var type = (obj.type || 'GET').toUpperCase();
+            var async = typeof obj.async == 'undefined' ? true : obj.async;
+            var url = obj.url;
+            var xhr = new XMLHttpRequest();
+            var timer = null;
+            var data = null;
+
+            if (typeof obj.data == "object"){
+                var d = obj.data;
+                data = [];
+                for(var k in d) {
+                    if (d.hasOwnProperty(k)){
+                        data.push(k + "=" + encodeURIComponent(d[k]));
+                    }
+                }
+                data = data.join("&");
+            }else{
+                data = typeof obj.data  == 'string' ? obj.data : null;
+            }
+
+            xhr.open(type, url, async);
+            var _onreadystatechange = xhr.onreadystatechange;
+
+            xhr.onreadystatechange = function() {
+
+                if (typeof _onreadystatechange == 'function') {
+                    _onreadystatechange.apply(xhr);
+                }
+                if ( xhr.readyState == 3 ) {
+                    obj.received && obj.received(xhr);
+                }
+                if ( xhr.readyState == 4 ) {
+                    xhr.onreadystatechange = null;
+                    var status = xhr.status;
+                    if ( status >= 200 && status < 400 ) {
+                        var responseText = xhr.responseText;
+                        var resp = responseText;
+                        if (obj.dataType == 'json'){
+                            try{
+                                resp = eval("(" + resp + ")");
+                            }catch(e){
+                                obj.error && obj.error(xhr);
+                                return;
+                            }
+                        }
+                        obj.success && obj.success(resp);
+                    } else {
+                        obj.error && obj.error(xhr);
+                    }
+                    clearTimeout(timer);
+                    obj.complete && obj.complete();
+                    obj.complete = null;
+                }
+            };
+            if( type == 'POST' ){
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+            }
+            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            if( typeof obj.timeout != 'undefined' ){
+                timer = setTimeout(function(){
+                    xhr.abort("timeout");
+                    obj.complete && obj.complete();
+                    obj.complete = null;
+                }, obj.timeout);
+            }
+            try{
+                xhr.send(data);
+            } catch ( e ) {
+                obj.error && obj.error();
+            }
+        }
+        if (navigator.userAgent.indexOf("WindowsWechat") != -1) {
+            __Ajax__({
+                type: 'POST',
+                dataType: 'json',
+                url: '/mp/profile_ext?action=urlcheck&uin=' + window.uin + '&key=' + window.key + '&pass_ticket=' + window.pass_ticket + "&appmsg_token=" + window.appmsg_token,
+                data: {
+                    __biz: 'MzIyOTM3ODAxNA==',
+                    scene: scene,
+                    url_list: ''
+                },
+                success: function(res) {}
+            });
+            return ;
+        }
+        __JSAPI__.invoke('getRouteUrl', {}, function(res) {
+            if (res.err_msg.indexOf('ok') != -1) {
+                var url = res.urls;
+                if (is_android) {
+                    url = JSON.parse(url);
+                }
+                __Ajax__({
+                    type: 'POST',
+                    dataType: 'json',
+                    url: '/mp/profile_ext?action=urlcheck&uin=' + window.uin + '&key=' + window.key + '&pass_ticket=' + window.pass_ticket + "&appmsg_token=" + window.appmsg_token,
+                    data: {
+                        __biz: 'MzIyOTM3ODAxNA==',
+                        scene: scene,
+                        url_list: JSON.stringify({url_list: url})
+                    },
+                    success: function(res) {
+                        if (res.is_ok == 0) {
+                            document.getElementById('js_button').style.display = 'none';
+                            is_ok = 0;
+                        } else {
+                            document.getElementById('js_button').style.display = '';
+                            is_ok = 1;
+                        }
+                    }
+                });
+            } else {
+                document.getElementById('js_button').style.display = '';
+                __Ajax__({
+                    type: 'POST',
+                    dataType: 'json',
+                    url: '/mp/profile_ext?action=urlcheck&uin=' + window.uin + '&key=' + window.key + '&pass_ticket=' + window.pass_ticket + "&appmsg_token=" + window.appmsg_token,
+                    data: {
+                        __biz: 'MzIyOTM3ODAxNA==',
+                        scene: scene,
+                        url_list: ''
+                    },
+                    success: function(res) {}
+                });
+            }
+        });
+    })();
+</script>
+
+<div class="weui_category_title js_tag">所有消息</div>
+<div id="js_container"></div>
+
+
+
+        <script nonce="">
+    var __DEBUGINFO = {
+        debug_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console34c264.js",
+        safe_js : "//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe34c264.js",
+        res_list: []
+    };
+</script>
+
+<script nonce="" type="text/javascript">
+(function() {
+	var totalCount = 0,
+			finishCount = 0;
+
+	function _loadVConsolePlugin() {
+		window.vConsole = new window.VConsole();
+		while (window.vConsolePlugins.length > 0) {
+			var p = window.vConsolePlugins.shift();
+			window.vConsole.addPlugin(p);
+		}
+	}
+
+	function _addVConsole(uri, cb) {
+		totalCount++;
+		var url = '//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/' + uri;
+		var node = document.createElement('SCRIPT');
+		node.type = 'text/javascript';
+		node.src = url;
+		node.setAttribute('nonce', '');
+		if (cb) {
+			node.onload = cb;
+		}
+		document.getElementsByTagName('head')[0].appendChild(node);
+	}
+	if (
+		(document.cookie && document.cookie.indexOf('vconsole_open=1') > -1)
+		|| location.href.indexOf('vconsole=1') > -1
+	) {
+		window.vConsolePlugins = [];
+		_addVConsole('3.0.0/vconsole.min.js', function() {
+
+			_addVConsole('plugin/vconsole-mpopt/1.0.1/vconsole-mpopt.js', _loadVConsolePlugin);
+		});
+	}
+})();
+</script>
+
+        <script>window.__moon_host = 'res.wx.qq.com';window.moon_map = {"biz_common/utils/respTypes.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes3518c6.js","biz_common/utils/url/parse.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse36ebcf.js","biz_common/template-2.0.1-cmd.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/template-2.0.1-cmd3518c6.js","biz_common/utils/wxgspeedsdk.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/wxgspeedsdk3518c6.js","biz_common/utils/emoji_data.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/emoji_data3518c6.js","biz_wap/utils/ajax.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax38c31a.js","history/profile_history_v2.html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/history/profile_history_v2.html3986e2.js","biz_common/utils/string/html.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html3518c6.js","history/template_helper.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/history/template_helper24f185.js","common/zepto.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/common/zepto1b4b91.js","appmsg/cdn_img_lib.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib38b7bb.js","biz_wap/jsapi/core.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core34c264.js","history/performance.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/history/performance3717bc.js","biz_wap/utils/mmversion.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion34c264.js","biz_common/dom/event.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event3a25e9.js","history/profile_history_v2.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/history/profile_history_v23986e2.js","appmsg/profile.js":"//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/profile39f74d.js"};</script><script type="text/javascript">window.__wxgspeeds={}; window.__wxgspeeds.moonloadtime=+new Date()</script><script onerror="wx_loaderror(this)"  type="text/javascript" src="//res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/moon368f86.js"></script>
+<script type="text/javascript">
+
+    document.domain = "qq.com";
+    var username = "" || "gh_88564d6c7518";
+    var is_subscribed = "1" * 1;
+    var action = "home" || "";
+    var bizacct_type = "" || "";
+    var can_msg_continue = '1' * 1;
+    var headimg = "http://wx.qlogo.cn/mmhead/Q3auHgzwzM6A54TibfJ8VyrHufnz1iap74HIdCLjn0uJdYoaicO3orMCA/0" || "";
+    var nickname = "小米超神" || "";
+    var is_banned = "0" * 1;
+    var __biz = "MzIyOTM3ODAxNA==";
+    var next_offset = "10" * 1;
+    var use_demo = "0" * 1;
+
+
+        var msgList = '{&quot;list&quot;:[{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000453,&quot;type&quot;:49,&quot;datetime&quot;:1512122368,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;【米神直播活动】米神直播狂欢夜！看直播豪礼送不停！&quot;,&quot;digest&quot;:&quot;大佬们帅气的阿姨又来了本周将是抢先服最后一期水友赛因为因为因为下一期水友赛就已经是正式服啦最后一期水友赛阿姨&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007534,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491183&amp;amp;idx=1&amp;amp;sn=c819ff766bb5da88196b1aa17ede21c5&amp;amp;chksm=e842ccdedf3545c8ba6272df3eaee31c7d406b96d0e9fb88b95b9d9797eedca0b804c3b7a052&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1BJZhicC8jkwgS6oT0RgTXfUuUnGRL1WtcdQgk8QlJRxruZEF0Db6ZPGeibSOvAKDqsAYR1aN0icQwYA\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;上电视！拿1MORE耳机！海量周边！丰厚礼包！小师妹的福利就是这么简单粗暴!&quot;,&quot;digest&quot;:&quot;正式服开启之后！小师妹沉迷我们的新英雄颜良文丑，为了替米神的首个双生英雄打CALL，为了感谢每个玩家小可爱对米神正式服的支持，特别开启了一个微博活动！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007533,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491183&amp;amp;idx=2&amp;amp;sn=d1bd8baf699213a947431a94f49b0ec3&amp;amp;chksm=e842ccdedf3545c8a73f771bc0770610ec040445467076d83cf609240e5b507af89dcaa38365&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/weibo.com\\/p\\/1006065930990099\\/home?from=page_100606&amp;amp;mod=TAB&amp;amp;is_all=1#1512113111691&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1BJZhicC8jkwgS6oT0RgTXfUGHTgrEs1mH1A583sBNDh59SuYEWyE7a4EFN0MZan8TFtQAyY4onEKQ\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;无惧荆棘天生超神&nbsp;米神发布会一图流回顾&quot;,&quot;digest&quot;:&quot;11.30米神搞大事了！小米超神发布会在北京正式开启，37家直播平台共同直播！错过直播的小伙伴也不要紧，我们精心准备了一图流感受一下发布会的盛况吧！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007530,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491183&amp;amp;idx=3&amp;amp;sn=4c1145b5a5ab475890a3bc6bb887c14a&amp;amp;chksm=e842ccdedf3545c879314d75b13c5a7e4438aaacb22e75bc5f7a6bd702b06eb15d025aed8b93&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1BJZhicC8jkwgS6oT0RgTXfU7sffYTicqxMeAVCjDzUGkycEgiaIo9ZKoN7aokCGPic27n2kmvk957QgA\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;【英雄视频】颜良文丑：“现在可是六打五，这买卖，稳赚不赔啊！”&quot;,&quot;digest&quot;:&quot;当所有等待都变成曾经，我会说好多精彩的故事给你听。——《远行》&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007527,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491183&amp;amp;idx=4&amp;amp;sn=dc711c602f8b918e83e08c790ad08ee3&amp;amp;chksm=e842ccdedf3545c8fde908237f1527725822c4ef6b2098cdf7ca68f7de4308dd8edab5282e1c&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1BJZhicC8jkwgS6oT0RgTXfUTUdoj8iaVVUcgaxgAnNUayfribAW9AiavpnrCAWCn1auyEfTrz57PuhCQ\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000452,&quot;type&quot;:49,&quot;datetime&quot;:1512036035,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;【送10台小米AI音箱】小米超神今日全网公测，登录游戏即送25元代金券！&quot;,&quot;digest&quot;:&quot;分享一篇文章。&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:0,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491166&amp;amp;idx=1&amp;amp;sn=202328b923761e68bea25284e23e9043&amp;amp;chksm=e842ccefdf3545f9582781272c12a610da129be4c9d8e9e1ee5ead0baffcf3e97d7895f8f7c7&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/ogOvFQ6nhubxQcYTYRznglFeYyjmoGiaJX9dmicjbQUI7Iw3pcmgfecVApeURcVIhmJXmDyibh5XumM1AzibGDFUAw\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;【正式服】喵喵带你玩转正式服（海量活动、福利、回馈）&quot;,&quot;digest&quot;:&quot;在这里输入你的内容，注意不要用退格键把所有文字删除，请保留一个或者用鼠标选取后直接输入，防止格式错乱。&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007514,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491166&amp;amp;idx=2&amp;amp;sn=9aec944745352e7b248580ca16ed3889&amp;amp;chksm=e842ccefdf3545f95dabb35bd9bf8cb362212959ddb44f81afa420e212238c7c1f67adabec38&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1D7cgLmc7E1xaZpHTTUZONOIZwTbB5lMthSFOPlzTUFfY5JxPgOeEGT12Yq6YNeoPqzmPibibmHs4Xw\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;来自二次元的召唤！六大UP主《小米超神》直播秀即将开启&quot;,&quot;digest&quot;:&quot;《小米超神》在今日全网公测，同步开启六大UP主“超神”直播秀。现在大家可以在游戏中肆意开黑，实力派一起玩！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007517,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491166&amp;amp;idx=3&amp;amp;sn=77bc57f735ec266a247490e206c3daa6&amp;amp;chksm=e842ccefdf3545f9623bd988ef8cb7b178c8be5f07e800b40cab8807b21b4e08f3a925de05a7&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1D7cgLmc7E1xaZpHTTUZONO4wXfjvcMZ0bavialUfibPlE740llRE2S6ic6WNbVXyoEdSCuOibIBubFVg\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;&quot;,&quot;copyright_stat&quot;:101,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000451,&quot;type&quot;:49,&quot;datetime&quot;:1511949692,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;【正式服】全网不限号正式服开服预告&quot;,&quot;digest&quot;:&quot;亲爱的小伙伴：《小米超神》将于11月30日开启全网不限号，安卓和iOS玩家将同服体验到精彩Moba游戏内容。&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007502,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491156&amp;amp;idx=1&amp;amp;sn=e6a0b8e54a62924977399bd23f915df7&amp;amp;chksm=e842cce5df3545f31d15bb10e9e0495de17368cd583bce807de8ecd855b08f51c6155234013d&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/xmcs.mi.com\\/&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1DoBhuiah5rrXJADeaWRnxjQ0L0mQqtu8e34GzY5QmaSdIXbLy7Zn2Y8dF37BF8BAMe3Lw0xIHyB9Q\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;米神快播正式服独家大爆料！！！（视频内有很可爱的彩蛋哦！）&quot;,&quot;digest&quot;:&quot;一起度过了今晚我们就\\\\n都是米神正式服的一员啦！\\\\n就在11月30日，也就是明天！\\\\n小米超神将在北京召开全网不限号测试发布会\\\\n正式服也将在同一天进行更新\\\\n感谢大家一直以来对米神的支持&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007505,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491156&amp;amp;idx=2&amp;amp;sn=5cbc05552facc3a4d4d05fa7a0e7b652&amp;amp;chksm=e842cce5df3545f3dc9b90da22eb4a46f98aa629bc1b7b78592c57dd3a795a661e221a020edf&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1DoBhuiah5rrXJADeaWRnxjQr5YOqcArSlVv8BV9y5hq2ibLiaKMsLAmicoLyCxXoic8ibS89lpyqsTxvicA\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;【正式服活动】全网不限号来袭&nbsp;免费赢MIX2全攻略&quot;,&quot;digest&quot;:&quot;小米首款5V5英雄对战手游《小米超神》，11月30日全网不限号测试火爆开启！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007506,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491156&amp;amp;idx=3&amp;amp;sn=b4f34740ace8a7876fe38e82fe18a4bb&amp;amp;chksm=e842cce5df3545f366337941fa7e92008bb2610520cb9187caf698138c6a991e36ef8f5dc285&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13990195&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1DoBhuiah5rrXJADeaWRnxjQbhKgDs8gaCUVDtXPYGatmWuKS5K8BmXPt5cuj5JX3IucPwyrTiarUcg\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000450,&quot;type&quot;:49,&quot;datetime&quot;:1511871109,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;【福利活动】米神颜值大测验，狂送6台小米MIX2！&quot;,&quot;digest&quot;:&quot;《小米超神》将于11月30日开启全网不限号测试，海量福利汹涌而来，今天喵喵给大家带来了米神新英雄-颜良文丑的特色H5活动：颜值大测验。&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007490,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491147&amp;amp;idx=1&amp;amp;sn=9753bbbf08e23ecdee03caad4a37f7dd&amp;amp;chksm=e842ccfadf3545ec81e33e06ede7d183b60ad619d7d89d3d981afb91da0ebf45322fbc8dbc92&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/hd.xmcs.mi.com&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Dn2ZxdUCgZib1bbsyt0QkVnOIDgU3nK2s6mr1iaTetQ0Ta20AcSStzgkANOUwSichyj29uuf1N6Kt2A\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;【龙大广告】米神新英雄颜良文丑上演热血足球&quot;,&quot;digest&quot;:&quot;史上最有天赋的足球运动员颜良文丑\\\\n将为球迷朋友们带来一场史上最惊心动魄的足球比赛！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007488,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491147&amp;amp;idx=2&amp;amp;sn=017f753e77d95532c620c2b04c7a3c61&amp;amp;chksm=e842ccfadf3545ecb2c1b2ae1d52f38ac8cf156b9908c44ab85103ee1a163ac963378300de42&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Dn2ZxdUCgZib1bbsyt0QkVnITTyKtbSzaujBYibLQB7ZgsM753e70U8AqtibonaQpFRLWXSE0Dicmia4Q\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;【发布会直播】37家直播平台助力&nbsp;&nbsp;全程直播米神发布会&quot;,&quot;digest&quot;:&quot;11月30日14点，《小米超神》的发布会将在北京举行，届时将有37家直播平台参与进行视频\\/音频\\/图文直播！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007486,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491147&amp;amp;idx=3&amp;amp;sn=9f382e8240dc33dbe34112a2ade1e2c1&amp;amp;chksm=e842ccfadf3545ec5b60bfe332175a8359d2bdc239267ae575aebecc9f58ce814c068658dae6&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/weibo.com\\/5200227003\\/FxbdD0GbA&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Dn2ZxdUCgZib1bbsyt0QkVn3yAYQpY7hNEfxNkicMaNsn7Pw9vHCn6o9GnFaFw6SI7FDItibnGs5qIg\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;【正式服】全网不限号精彩线上活动公告&quot;,&quot;digest&quot;:&quot;《小米超神》全网不限号11月30日开启后，游戏内将开放众多的精彩活动，每日游戏活跃将获得全网不限号限定头像框，兑换获得关羽皮肤御龙将军和英雄黄忠，同时参与游戏内活动将有机会获得MIX2、小米手环2、1MORE耳机实物奖励！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007483,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491147&amp;amp;idx=4&amp;amp;sn=861551738834abf9e02c641b58010f88&amp;amp;chksm=e842ccfadf3545ec8023b019526b17123c6711a69f7d072ce806142312b99da3ad7f6ba75d41&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13951289&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Dn2ZxdUCgZib1bbsyt0QkVnmqW5xPALVTlN731rWtxcSwQh5ibcRGFI8oC3Ctia0AzkWnNsd6oN0gXQ\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:11,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000449,&quot;type&quot;:49,&quot;datetime&quot;:1511779645,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;全网不限号福利天天领~这么多福利喵喵领的手软了！&quot;,&quot;digest&quot;:&quot;白驹过隙，不知不觉在周四（11月30日）《小米超神》即将迎来全网不限号测试，届时我们将开启正式服，明天（11月28日0:00）米神的抢先服安卓服务器即将关服，安卓用户的小伙伴们将无法登陆游戏。&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007443,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491100&amp;amp;idx=1&amp;amp;sn=6623d71706190e147e4e10bc63296c9f&amp;amp;chksm=e842ccaddf3545bb4f7cc29664a98a2d83bc65c2334e503c586842d580ec052194fb6c752c2e&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1A8CF08IuEGyliaXic1dMuCd0S6zcklCKJeRThry7hHDlOnic9weFgXboV52PoKWMgZv75INbFNd0TEw\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;【体验服更新】米神新版本活动公告&nbsp;新英雄新皮肤新功能抢先体验&quot;,&quot;digest&quot;:&quot;大家人都知道，米神的正式服即将开启了，然而已经忙得不可开交的程序员哥哥们真可以说是夜以继日不眠不休的坚守阵地，除了大家都很期待的正式服外，程序员哥哥们也没有偏心，这不~体验服也有新动作，新英雄、新皮肤、新功能一应俱全。&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007444,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491100&amp;amp;idx=2&amp;amp;sn=2d37f1a233a8f023208b71fb330346c6&amp;amp;chksm=e842ccaddf3545bbbe4d67f195efb85373282ab7c5f5d26e075b93ba989e4b2dcc2788cb1ca5&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13989860&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1A8CF08IuEGyliaXic1dMuCd0yh78TpZ0Hbj0qoQPxpxaVfKeBzvvnUjFB7Sqfh9CSAMkr4DovXLVCg\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;【贴吧活动】米神全网不限号开测，我愿做头号见证者&quot;,&quot;digest&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007442,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491100&amp;amp;idx=3&amp;amp;sn=769e3ab1987b693ad5c64d74ba0fe615&amp;amp;chksm=e842ccaddf3545bbc7aeb59330b078b35d63e0cb93b3d4adc8865ce372de3a78e55f49d8ada1&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/tieba.baidu.com\\/p\\/5454719456?pn=1&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1A8CF08IuEGyliaXic1dMuCd0SJd4PRnGZyFE7deF5ib6NuYCaBiatv2zAmicAqMyHQpqomHW20ms3gQoQ\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;【有奖竞猜】武王奇兵&nbsp;谁被丢进了神之谷？&quot;,&quot;digest&quot;:&quot;会是谁被丢进了神之谷？&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007451,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491100&amp;amp;idx=4&amp;amp;sn=f52d8528003e8d93127e04ef413d4039&amp;amp;chksm=e842ccaddf3545bb6cae23fd43588785a0da498244b7c7bb290effc7d1c8043c8c0df3efe9c6&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13985699&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1A8CF08IuEGyliaXic1dMuCd0FWGmqVFiafV3fnmpL0em7YdicEbxk5eE8JT3FhM0WibxMfO5R0bkVBJ8Q\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000448,&quot;type&quot;:49,&quot;datetime&quot;:1511690386,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;【有奖竞猜】武王奇兵&nbsp;千金猛将威震天下&quot;,&quot;digest&quot;:&quot;《小米超神》最新英雄——颜良文丑，在武王曹操的千金榜招募下，杀入战场！虽说颜良文丑本是猛士不假，但绝无如此恐怖的战力，为何到了曹操麾下竟然强悍至此？曹操偷袭神之谷究竟获得了什么？颜良文丑究竟发生了什么？&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007434,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491083&amp;amp;idx=1&amp;amp;sn=63310099ba22fcf15ac60aa9cadf51c0&amp;amp;chksm=e842ccbadf3545ac159abde03edcaea0c9032e9885b800d9087e997febc9529047e16bb54259&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13985699&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1BH7Fp3nNtzpzHQHdqu3VZcJxpottiaiaC0UbJ2rZibQF72dn9q55bseB8tiaBlGiaylU9HMib5qUcEoDuw\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:0,&quot;multi_app_msg_item_list&quot;:[],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000447,&quot;type&quot;:49,&quot;datetime&quot;:1511604065,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;【正式服】全新排位赛S1赛季抢先看&quot;,&quot;digest&quot;:&quot;距离11月30日米神全网不限号测试的日子越来越近了，小伙伴们是不是都很期待？&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007414,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491066&amp;amp;idx=1&amp;amp;sn=da839b6d6dc9d0e062ff4b73bedc65b7&amp;amp;chksm=e842cf4bdf35465d8cf5722e31e58735cd48120e89ec47a9097169729ba1ff012ec942b606f2&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13982290&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Ava59p8m4V2MMkYjKszJqukNvybJboWkg44ECoLYa8uCib8UIr4ib2CpnfnsgRz4ARkOQpeGdH2yxw\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;11月30日《小米超神》发布会重磅来袭，诚邀你共同见证！&quot;,&quot;digest&quot;:&quot;还记得米神第一次给你带来的惊喜吗？还记得你第一次体验米神的触动吗？还记得你爱上米神的理由吗？一路走来，感恩有你！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007417,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491066&amp;amp;idx=2&amp;amp;sn=8dc4449a650e343f0309763953e10be7&amp;amp;chksm=e842cf4bdf35465d650460e74172daec6e5143e2de782ba9c11197d02d68fd98f333880d6a2a&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Ava59p8m4V2MMkYjKszJquPJibofvQ9jMdmwcWyJFNpLPP0y2PU4aj4NxjiavHnLHfZaU5ORyuYeqA\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;神秘英雄竟然这样揭榜&nbsp;千金猛将终于曝光&nbsp;（今日解锁特殊实物奖励还有周末礼包福利哦！）&quot;,&quot;digest&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007406,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491066&amp;amp;idx=3&amp;amp;sn=ed67d3f6acfa08a73cdb58b013e2d48c&amp;amp;chksm=e842cf4bdf35465d3ee647e2999516586f4a149df97b196562b660ebb7eabec5085f7ab70dd0&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/weibo.com\\/5930990099\\/FwHy8yLqw?from=page_1006065930990099_profile&amp;amp;wvr=6&amp;amp;mod=weibotime&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Ava59p8m4V2MMkYjKszJquZB1vPc6aszyZsrnKL2qfd90C7N9Ee9dDgaEtv1bc35HrRPv36wTW6w\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;坚决打击不良游戏行为&nbsp;每周处罚名单公布（截止至11.23）&quot;,&quot;digest&quot;:&quot;米神对于游戏内不良行为决不姑息，只要证据充分，根据行为影响程度，禁言、禁战、封号直至永久封停，只求还所有米神&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007416,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491066&amp;amp;idx=4&amp;amp;sn=225738d19228578e42eeacac92d6a907&amp;amp;chksm=e842cf4bdf35465d258d704e2e7a93dae1271fd103e785004eef46f40c97f0d53efb1d1cfd18&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13970799&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1Ava59p8m4V2MMkYjKszJquuoQkQcYOWsf7BjicdDo0sBLibAZRl8FlCbv5mOzYTZS4ia4IM8ib2fCXBw\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000446,&quot;type&quot;:49,&quot;datetime&quot;:1511517645,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;《小米超神》抢先服升级正式服公告&quot;,&quot;digest&quot;:&quot;《小米超神》将于11月30日迎来全网不限号测试，我们将开启正式服，届时大家可以通过安卓和iOS双平台下载到我们的游戏，同时iOS也将转成免费下载。&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007382,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491047&amp;amp;idx=1&amp;amp;sn=aa46f5df6e2ae1d8626a5b05c4b62be3&amp;amp;chksm=e842cf56df354640af1e810a0efe5acabed7f512bf323b52a191624a419e3e358645e89459c1&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;http:\\/\\/bbs.xiaomi.cn\\/t-13941324&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1CFKfdx9ibt8JpH1wXsI2JZzqS5oRT0Fv22cCSmKs44FZkoD8Z5W6QicoeITpwL7xKxfXhfmxx388ew\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;神秘英雄欲揭榜&nbsp;意外场面惊群众！！！&quot;,&quot;digest&quot;:&quot;一日不见如隔三秋，就在大家都还忙着犯花痴沉迷于曹操无法自拔的时候，有理想、有追求、有抱负且热衷于串门爆料的微&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007376,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491047&amp;amp;idx=3&amp;amp;sn=a90e132e1fa385e36e6380546cdb1e48&amp;amp;chksm=e842cf56df354640398da256d9a8452f61fd081ec5434ad2c3f5d4f72c07f03ffc735f604338&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/weibo.com\\/5930990099\\/Fwy3uBDI7?from=page_1006065930990099_profile&amp;amp;wvr=6&amp;amp;mod=weibotime&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1ARghouokkPpYfsRHDZU3IjiaWX2y46V1fSwZMzVET4Y0uDlgVksaiaVAiaBwGynBx8AAdCqWsBcKFrA\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1},{&quot;title&quot;:&quot;【米神水友赛】官方大佬教科书式打法+阿姨课外书式解说&quot;,&quot;digest&quot;:&quot;各位小心肝们好帅阿姨又来捏脸惹~~经过无数大佬＆坑货的历练阿姨操作水平直线上升终于在上周和小白兔的配合里完成&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007372,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491047&amp;amp;idx=4&amp;amp;sn=c08c2d2177bd088a345e44f578668862&amp;amp;chksm=e842cf56df35464034f6743d25f0edb01942c1739eec6730071017b6a83640b4b5ff586f247e&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1ARghouokkPpYfsRHDZU3Ij5vvQNDVKjcsDibVw3b00JIQr8yhHAbkFrD3oV8ZicxPtiaE1sTt5mn3vg\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;誓上王者的阿姨&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000445,&quot;type&quot;:49,&quot;datetime&quot;:1511431270,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;武王千金求猛将&nbsp;神秘英雄勇揭榜（实物大奖等你拿）&quot;,&quot;digest&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007354,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491021&amp;amp;idx=1&amp;amp;sn=674152820d09f04296905799105f4d10&amp;amp;chksm=e842cf7cdf35466a2db4139f87146344d8489c7924647c5b77908f00c1244d0fd96e8e0a0cfb&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/weibo.com\\/5930990099\\/Fwp7AeiE7?from=page_1006065930990099_profile&amp;amp;wvr=6&amp;amp;mod=weibotime&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1CIFWCsOQFLmia9YBNW8iatBnYxlgA3S5kYqkHado3sMibbHmSaQkibIxQqXWck3kUZmdibk5kQibgTeTZw\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;《Honey!撸牙》第15期——遇到这样的队友，真的好害怕！&quot;,&quot;digest&quot;:&quot;还记得我们曾经并肩作战的约定吗？求你回头看我一眼行不？遇到这种坑坑坑队友，简直分分钟炸毛！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007358,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491021&amp;amp;idx=2&amp;amp;sn=7aa3b404ce7d217eccb9cb33fa40e2f2&amp;amp;chksm=e842cf7cdf35466abd460eb3e2ac91d8e26ba92dbf21ef31dc3c508b34527898b10f89b971e9&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/m.weibo.cn\\/status\\/4177247483156935?wm=3333_2001&amp;amp;from=107B193010&amp;amp;sourcetype=weixin&amp;amp;featurecode=newtitle&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1CIFWCsOQFLmia9YBNW8iatBn643tujkSlxWyf1GhFFv66oLXbRztsRGfXpJulDwxRyibj6T6vRwRKxA\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}},{&quot;comm_msg_info&quot;:{&quot;id&quot;:1000000444,&quot;type&quot;:49,&quot;datetime&quot;:1511344850,&quot;fakeid&quot;:&quot;3229378014&quot;,&quot;status&quot;:2,&quot;content&quot;:&quot;&quot;},&quot;app_msg_ext_info&quot;:{&quot;title&quot;:&quot;武王千金求猛将&nbsp;谁敢揭下千金榜（小师妹连续四日狂抽实物大奖）&quot;,&quot;digest&quot;:&quot;一日不见如隔三秋，就在大家都还忙着犯花痴沉迷于曹操无法自拔的时候，有理想、有追求、有抱负且热衷于串门爆料的微博小师妹又带着新英雄的内幕出现啦！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007366,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491015&amp;amp;idx=1&amp;amp;sn=d7206a1f6ae213c32127eb5ad917af8e&amp;amp;chksm=e842cf76df3546602a9c9b35bf1fa47fcafa9636bcbf94b80318834ebe3225094742fc0f56d0&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;https:\\/\\/weibo.com\\/5930990099\\/Fwfc44ozE?from=page_1006065930990099_profile&amp;amp;wvr=6&amp;amp;mod=weibotime&amp;amp;type=comment#_rnd1511323808559&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1CIFWCsOQFLmia9YBNW8iatBn3snR4ZSz0GZ8JhJMAWibguv8aiaMbQ96H47ic1EVq18q1jlIqSAEGc1iag\\/0?wx_fmt=jpeg&quot;,&quot;subtype&quot;:9,&quot;is_multi&quot;:1,&quot;multi_app_msg_item_list&quot;:[{&quot;title&quot;:&quot;阿姨告诉你米神新版本宠幸谁：那些改版归来的爸爸们！（视频内有彩蛋）&quot;,&quot;digest&quot;:&quot;米神抢先服今天更新啦！&quot;,&quot;content&quot;:&quot;&quot;,&quot;fileid&quot;:100007360,&quot;content_url&quot;:&quot;http:\\/\\/mp.weixin.qq.com\\/s?__biz=MzIyOTM3ODAxNA==&amp;amp;mid=2247491015&amp;amp;idx=2&amp;amp;sn=4ce8e8c4c693e530e24fe8623d5a81b3&amp;amp;chksm=e842cf76df35466008b3b57ca083d5834aad548cf958058ed618aca20e16b846d14b3ab1f459&amp;amp;scene=27#wechat_redirect&quot;,&quot;source_url&quot;:&quot;&quot;,&quot;cover&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/cCMRyBB7L1CIFWCsOQFLmia9YBNW8iatBnvxSgJXnfptIlAE0sMdVImMeydpgEoFCO1CRVrEaYITRmg12iaib6jnFA\\/0?wx_fmt=jpeg&quot;,&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}],&quot;author&quot;:&quot;米神喵喵&quot;,&quot;copyright_stat&quot;:100,&quot;del_flag&quot;:1}}]}';
+        if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 29711,
+            startKey : 60,
+            badjsId: 47,
+
+            reportOpt : {
+                username : username,
+            }
+        });
+    }
+
+    seajs.use("appmsg/profile.js");
+</script>
+
+    </body>
+    <script nonce="" type="text/javascript">document.addEventListener("touchstart", function() {},false);</script>
+</html>
+<!--tailTrap<body></body><head></head><html></html>-->
